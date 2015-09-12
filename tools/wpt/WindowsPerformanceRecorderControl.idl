@@ -1,0 +1,348 @@
+/*  WindowsPerformanceRecorderControl.idl
+ *
+ *  IDL defines for public Windows Performance Recorder COM APIs.
+ *
+ *  Copyright (c) 2012 Microsoft Corporation. All rights reserved
+ */
+
+cpp_quote("//+-------------------------------------------------------------------------")
+cpp_quote("//")
+cpp_quote("//  Microsoft Windows")
+cpp_quote("//  Copyright (c) 2012 Microsoft Corporation. All rights reserved.")
+cpp_quote("//")
+cpp_quote("//--------------------------------------------------------------------------")
+
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+
+//
+// WPRControl Interfaces
+//
+
+[
+    object,
+    uuid(B96AA961-1FC7-4FD2-9F6B-513FF7BBE38D),
+    dual,
+    oleautomation,
+    helpstring("IParsingErrorInfo Interface"),
+    pointer_default(unique),
+    local
+]
+interface IParsingErrorInfo : IErrorInfo
+{
+    [id(1), helpstring("GetColumnNumber")] HRESULT GetColumnNumber([out, retval] ULONG* pColumnNumber);
+    [id(2), helpstring("GetLineNumber")] HRESULT GetLineNumber([out, retval] ULONG* pLineNumber);
+    [id(3), helpstring("GetElementType")] HRESULT GetElementType([out, retval] BSTR* pbstrElementType);
+    [id(4), helpstring("GetElementId")] HRESULT GetElementId([out, retval] BSTR* pbstrElementId);
+};
+
+
+[
+    object,
+    uuid(EC497FC5-E1DD-4F26-9A0A-85116DE069BD),
+    dual,
+    oleautomation,
+    helpstring("IControlErrorInfo Interface"),
+    pointer_default(unique),
+    local
+]
+interface IControlErrorInfo : IErrorInfo
+{
+    typedef enum
+    {
+        ObjectType_Unknown,
+        ObjectType_Profile,
+        ObjectType_Collector,
+        ObjectType_Provider
+    } CObjectType;
+
+    [id(1), helpstring("GetObjectType")] HRESULT GetObjectType([out, retval] CObjectType* pObjectType);
+    [id(2), helpstring("GetHResult")] HRESULT GetHResult([out, retval] HRESULT* pHResult);
+    [id(3), helpstring("GetInnerErrorInfo")] HRESULT GetInnerErrorInfo([out, retval] IUnknown** ppVal);
+};
+
+
+[
+    object,
+    uuid(4D3894EE-53E0-4F0D-A928-49AC33B3CB80),
+    dual,
+    oleautomation,
+    helpstring("IEnumControlWarningInfo Interface"),
+    pointer_default(unique),
+    local
+]
+interface IEnumControlWarningInfo : IDispatch
+{
+    [id(1), helpstring("Next")] HRESULT Next([in] ULONG celt, [out, size_is(celt), length_is(*pCeltFetched)] IControlErrorInfo** prgVar, [out] ULONG* pCeltFetched);
+    [id(2), helpstring("Skip")] HRESULT Skip([in] ULONG celt);
+    [id(3), helpstring("Reset")] HRESULT Reset();
+    [id(4), helpstring("Clone")] HRESULT Clone([out] IEnumControlWarningInfo** ppEnum);
+};
+
+
+[
+    object,
+    uuid(71E0563A-BCBC-4784-933A-735A2EF4FB8A),
+    dual,
+    oleautomation,
+    helpstring("IProfile Interface"),
+    pointer_default(unique),
+    local
+]
+interface IProfile : IDispatch
+{
+    typedef enum
+    {
+        LoggingMode_Unknown,
+        LoggingMode_Memory,
+        LoggingMode_File,
+    } CLoggingMode;
+
+    typedef enum
+    {
+        DetailLevel_Unknown,
+        DetailLevel_Light,
+        DetailLevel_Verbose,
+    } CDetailLevel;
+
+    [propget, id(1), helpstring("IsMutable")] HRESULT IsMutable([out, retval] VARIANT_BOOL* pfMutable);
+    [propput, id(1), helpstring("IsMutable")] HRESULT IsMutable([in] VARIANT_BOOL fMutable);
+    [propget, id(2), helpstring("Version")] HRESULT Version([out, retval] float* pVersion);
+    [propget, id(3), helpstring("Author")] HRESULT Author([out, retval] BSTR* pbstrAuthor);
+    [propget, id(4), helpstring("Team")] HRESULT Team([out, retval] BSTR* pbstrTeam);
+    [propget, id(5), helpstring("Comments")] HRESULT Comments([out, retval] BSTR* pbstrComments);
+    [propget, id(6), helpstring("Company")] HRESULT Company([out, retval] BSTR* pbstrCompany);
+    [propget, id(7), helpstring("Copyright")] HRESULT Copyright([out, retval] BSTR* pbstrCopyright);
+    [propget, id(8), helpstring("Tag")] HRESULT Tag([out, retval] BSTR* pbstrTag);
+    [propget, id(9), helpstring("Id")] HRESULT Id([out, retval] BSTR* pbstrId);
+    [propget, id(10), helpstring("Name")] HRESULT Name([out, retval] BSTR* pbstrName);
+    [propget, id(11), helpstring("Description")] HRESULT Description([out, retval] BSTR* pbstrDescription);
+    [propget, id(12), helpstring("LoggingMode")] HRESULT LoggingMode([out, retval] CLoggingMode* pLoggingMode);
+    [propget, id(13), helpstring("LoggingModeString")] HRESULT LoggingModeString([out, retval] BSTR* pbstrLoggingMode);
+    [propget, id(14), helpstring("DetailLevel")] HRESULT DetailLevel([out, retval] CDetailLevel* pDetailLevel);
+    [propget, id(15), helpstring("DetailLevelString")] HRESULT DetailLevelString([out, retval] BSTR* pbstrDetailLevel);
+    [propget, id(17), helpstring("IsDefault")] HRESULT IsDefault([out, retval] VARIANT_BOOL* pfDefault);
+    [propget, id(18), helpstring("ProblemCategories")] HRESULT ProblemCategories([out, retval] BSTR* pbstrProblemCategories);
+
+    [id(19), helpstring("LoadFromFile")] HRESULT LoadFromFile([in] BSTR bstrProfileName, [in] BSTR bstrFileName);
+    [id(20), helpstring("LoadFromString")] HRESULT LoadFromString([in] BSTR bstrProfile);
+    [id(21), helpstring("IsEqual")] HRESULT IsEqual([in] IProfile* pProfile);
+};
+
+
+[
+    object,
+    uuid(DBF29874-763E-492F-8D36-9AE8DBD89A1C),
+    dual,
+    oleautomation,
+    helpstring("IEnumProfile Interface"),
+    pointer_default(unique),
+    local
+]
+interface IEnumProfile : IDispatch
+{
+    [id(1), helpstring("Next")] HRESULT Next([in] ULONG celt, [out, size_is(celt), length_is(*pCeltFetched)] IProfile** prgVar, [out] ULONG* pCeltFetched);
+    [id(2), helpstring("Skip")] HRESULT Skip([in] ULONG celt);
+    [id(3), helpstring("Reset")] HRESULT Reset();
+    [id(4), helpstring("Clone")] HRESULT Clone([out] IEnumProfile** ppEnum);
+};
+
+
+[
+    object,
+    uuid(BB5ED25C-A7A8-4CEF-BFFD-2D9C64CB457A),
+    dual,
+    oleautomation,
+    helpstring("IProfileCollection Interface"),
+    pointer_default(unique),
+    local
+]
+interface IProfileCollection : IDispatch
+{
+    [id(1), helpstring("Add")] HRESULT Add([in] IProfile* pProfile, [in] VARIANT_BOOL fMerge);
+    [id(2), helpstring("Remove")] HRESULT Remove([in] IProfile* pProfile);
+    [id(3), helpstring("Clear")] HRESULT Clear();
+    [id(4), helpstring("IsEqual")] HRESULT IsEqual([in] IProfileCollection* pProfileCollection);
+    [id(5), helpstring("LoadIntoXML")] HRESULT LoadIntoXML([out] BSTR* pbstrResults);
+};
+
+
+[
+    object,
+    uuid(3BFF3423-C44D-480E-9A91-60941D5D6E59),
+    dual,
+    oleautomation,
+    helpstring("IControlProgress Interface"),
+    pointer_default(unique),
+    local
+]
+interface IControlProgressHandler : IDispatch
+{
+    [id(1), helpstring("OnBegin")] HRESULT OnBegin();
+    [id(2), helpstring("OnUpdate")] HRESULT OnUpdate([in] ULONG CurrentValuePercent);
+    [id(3), helpstring("OnEnd")] HRESULT OnEnd([in] HRESULT hrResult, [in] ULONG EventsLost);
+};
+
+
+[
+    object,
+    uuid(9F8FB077-7E67-4454-8A9E-31D43A0CDD4E),
+    dual,
+    oleautomation,
+    helpstring("ITraceMergeTextHandler Interface"),
+    pointer_default(unique),
+    local
+]
+interface ITraceMergeTextHandler: IDispatch
+{
+    [propget, id(1), helpstring("Count")] HRESULT Count([out, retval] ULONG* cText);
+    [id(2), helpstring("GetText")] HRESULT GetText([in] ULONG iText, [out] BSTR* pbstrText);
+    [id(3), helpstring("WaitForText")] HRESULT WaitForText([in] ULONG Milliseconds);
+    [id(4), helpstring("GetFileName")] HRESULT GetFileName([out] BSTR* pbstrFileName);
+    [id(5), helpstring("GetNGenPdbsPath")] HRESULT GetNGenPdbsPath([out] VARIANT_BOOL* pfEnable, [out] BSTR* pbstrNGenPdbsCachePath, [out] BSTR* pbstrNGenPdbsTargetPath);
+};
+
+
+[
+    object,
+    uuid(629E2BBB-9629-45D8-8314-5D72324AE33F),
+    dual,
+    oleautomation,
+    helpstring("ITraceMergeProperties Interface"),
+    pointer_default(unique),
+    local
+]
+interface ITraceMergeProperties : IDispatch
+{
+    [id(1), helpstring("LoadFromFile")] HRESULT LoadFromFile([in] BSTR bstrTraceMergeName, [in] BSTR bstrFileName);
+    [id(2), helpstring("LoadFromString")] HRESULT LoadFromString([in] BSTR bstrTraceMerge);
+    [id(3), helpstring("IsEqual")] HRESULT IsEqual([in] ITraceMergeProperties* pTraceMergeProperties);
+};
+
+
+[
+    object,
+    uuid(C66BC1C2-D913-4BF0-9E08-014523E4A205),
+    dual,
+    oleautomation,
+    helpstring("IControlManager Interface"),
+    pointer_default(unique),
+    local
+]
+interface IControlManager : IDispatch
+{
+    [propget, id(1), helpstring("property ControlProgressHandler")] HRESULT ControlProgressHandler([out, retval] IControlProgressHandler** ppControlProgressHandler);
+    [propput, id(1), helpstring("property ControlProgressHandler")] HRESULT ControlProgressHandler([in] IControlProgressHandler* pControlProgressHandler);
+
+    [id(2), helpstring("Start")] HRESULT Start([in] IProfileCollection* pProfileCollection);
+    [id(3), helpstring("Update")] HRESULT Update([in] IProfileCollection* pProfileCollection);
+    [id(4), helpstring("Cancel")] HRESULT Cancel([in] IProfileCollection* pProfileCollection);
+    [id(5), helpstring("Save")] HRESULT Save([in] BSTR bstrFileName, [in] IProfileCollection* pProfileCollection, [in] ITraceMergeProperties* pTraceMergeProperties);
+    [id(6), helpstring("Stop")] HRESULT Stop([in] BSTR bstrFileName, [in] IProfileCollection* pProfileCollection, [in] ITraceMergeProperties* pTraceMergeProperties);
+    [id(7), helpstring("QueryXML")] HRESULT QueryXML([out] BSTR* pbstrResults, [in] VARIANT_BOOL fValidateRuntimeState);
+    [id(8), helpstring("Query")] HRESULT Query([out] IProfileCollection** ppProfileCollection, [in] VARIANT_BOOL fValidateRuntimeState);
+
+    [propget, id(9), helpstring("property TraceMergeTextHandler")] HRESULT TraceMergeTextHandler([out, retval] ITraceMergeTextHandler** ppTraceMergeTextHandler);
+    [propput, id(9), helpstring("property TraceMergeTextHandler")] HRESULT TraceMergeTextHandler([in] ITraceMergeTextHandler* pTraceMergeTextHandler);
+
+    [propget, id(10), helpstring("property TemporaryTraceDirectory")] HRESULT TemporaryTraceDirectory([out, retval] BSTR* pbstrTemporaryTraceDirectory);
+    [propput, id(10), helpstring("property TemporaryTraceDirectory")] HRESULT TemporaryTraceDirectory([in] BSTR bstrTemporaryTraceDirectory);
+
+    [id(11), helpstring("GetProviderNameFromGuid")] HRESULT GetProviderNameFromGuid([out] BSTR* bstrProviderIdStr, [in] REFGUID ProviderId);
+    [id(12), helpstring("GetProviderGuidFromName")] HRESULT GetProviderGuidFromName([out] GUID* ProviderId, [in] BSTR bstrProViderName);
+    [id(13), helpstring("CaptureStateOnDemand")] HRESULT CaptureStateOnDemand([in] IProfileCollection* pProfileCollection);
+};
+
+
+[
+    object,
+    uuid(0B626B7D-C028-411A-84B2-1FE7EE6EF9A0),
+    dual,
+    oleautomation,
+    helpstring("IOnOffTransitionManager Interface"),
+    pointer_default(unique),
+    local
+]
+interface IOnOffTransitionManager : IDispatch
+{
+    [id(1), helpstring("EnableBootRecording")] HRESULT EnableBootRecording([in] IProfileCollection* pProfileCollection);
+    [id(2), helpstring("DisableBootRecording")] HRESULT DisableBootRecording([in] IProfileCollection* pProfileCollection);
+    [id(3), helpstring("StartShutdownRecording")] HRESULT StartShutdownRecording([in] IProfileCollection* pProfileCollection);
+    [id(4), helpstring("UpdateShutdownRecording")] HRESULT UpdateShutdownRecording([in] IProfileCollection* pProfileCollection);
+    [id(5), helpstring("MergeShutdownRecording")] HRESULT MergeShutdownRecording([in] BSTR bstrFileName, [in] IProfileCollection* pProfileCollection, [in] ITraceMergeProperties* pTraceMergeProperties);
+};
+
+
+[
+    uuid(FE987EC6-F434-4AFC-8B08-C49D11300D3E),
+    version(1.0),
+    helpstring("WindowsPerformanceRecorderControl 1.0 Type Library")
+]
+library WindowsPerformanceRecorderControlLibrary
+{
+    importlib("stdole2.tlb");
+
+    [
+        uuid(D66D26BF-6098-4B78-9D94-7BC219612AE4),
+        helpstring("Profile Class")
+    ]
+    coclass CProfile
+    {
+        [default] interface IProfile;
+        interface IParsingErrorInfo;
+    };
+
+    [
+        uuid(B98B53F3-83BA-4837-8946-E886BE8D4003),
+        helpstring("ProfileCollection Class")
+    ]
+    coclass CProfileCollection
+    {
+        [default] interface IProfileCollection;
+        interface IEnumProfile;
+        interface IErrorInfo;
+    };
+
+    [
+        uuid(CAB2BDD5-5B3B-40AC-985F-2EA49E430FE4),
+        helpstring("TraceMerge Class")
+    ]
+    coclass CTraceMergeProperties
+    {
+        [default] interface ITraceMergeProperties;
+        interface IParsingErrorInfo;
+    };
+
+    [
+        uuid(971A7808-88BE-4AAD-9E1E-7C7E258512E3),
+        helpstring("ControlManager Class")
+    ]
+    coclass CControlManager
+    {
+        [default] interface IControlManager;
+        interface IOnOffTransitionManager;
+        interface IControlErrorInfo;
+        interface IEnumControlWarningInfo;
+    };
+};
+
+
+cpp_quote("namespace WindowsPerformanceRecorder")
+cpp_quote("{")
+
+cpp_quote("//")
+cpp_quote("// WPRControl Helper Functions")
+cpp_quote("//")
+cpp_quote("")
+cpp_quote("__control_entrypoint(DLL) HRESULT WPRCCreateInstance(_In_  REFCLSID rclsid, _In_opt_ LPUNKNOWN pUnkOuter, _In_  DWORD dwClsContext, _In_  REFIID riid, _Outptr_  LPVOID *ppv);")
+cpp_quote("__control_entrypoint(DLL) HRESULT WPRCCreateInstanceUnderInstanceName(_In_opt_ BSTR bstrInstanceName, _In_  REFCLSID rclsid, _In_opt_ LPUNKNOWN pUnkOuter, _In_  DWORD dwClsContext, _In_  REFIID riid, _Outptr_  LPVOID *ppv);")
+cpp_quote("__control_entrypoint(DLL) HRESULT WPRCQueryBuiltInProfiles(_In_  HMODULE hModule, _Out_  BSTR* pbstrProfiles);")
+cpp_quote("__control_entrypoint(DLL) HRESULT WPRCFormatError(_In_ HRESULT Hresult, _In_opt_ LPUNKNOWN pUnknown, _Out_ BSTR* pbstrMessage, _Out_opt_ BSTR* pbstrDescription, _Out_opt_ BSTR* pbstrDetailedDescription);")
+cpp_quote("__control_entrypoint(DLL) HRESULT WPRCControlLogging(_In_ BOOL fEnabled);")
+cpp_quote("__control_entrypoint(DLL) HRESULT WPRCRemoveLogging();")
+cpp_quote("")
+
+cpp_quote("}    // namespace WindowsPerformanceRecorder")
+cpp_quote("")

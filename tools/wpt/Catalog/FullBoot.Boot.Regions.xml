@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<InstrumentationManifest>
+  <Instrumentation>
+    <Regions>
+      <!-->
+      Full Boot:
+      Begin Root Container
+      <-->
+      <RegionRoot Name="Boot-Overall-Time" Guid="{ACF96BF8-79BE-4467-9122-EB231896AD2A}" FriendlyName="Full Boot">
+        <!-->
+        Boot Main Path
+          Children:
+            Boot-PreSessionInit-Phase
+            Boot-SessionInit-Phase
+            Boot-Winlogon-Phase
+            Boot-ExplorerInit
+            
+        Being Boot Main Path Container
+        <-->
+        <Region Name="Boot-Main-Path" Guid="{48E873C6-74CA-4ddb-9BB1-1D3B5F750D8C}" FriendlyName="Boot Main Path">
+          
+          <!-->
+          Boot-PreSessionInit-Phase
+          Children:
+            Boot-PnP-BootStart-Phase
+            Boot-PnP-SystemStart-Phase
+          <-->
+          
+          <Region Name="Boot-PreSessionInit-Phase" Guid="{E1AABE77-050D-4a2a-9A9C-02CF29F89ECF}">
+            
+            <!-->
+            Boot-PnP-BootStart-Phase
+                        
+            Event-Based Start with provider=9c205a39-1250-487d-abd7-e831c6290539, id=200, and version=0
+            Event-Based Stop with provider=9c205a39-1250-487d-abd7-e831c6290539, id=201, and version=0
+            
+            Additionally, only match start to stop if the PIDs are the same.
+            <-->
+            <Region Name="Boot-PnP-BootStart-Phase" Guid="{CDC4DDEB-995D-46aa-A9E6-F3D63B4C7A6E}">
+              <Match>
+                <Event PID="true" />
+              </Match>
+              <Start>
+                <Event Provider="{9c205a39-1250-487d-abd7-e831c6290539}" Id="200" Version="0" />
+              </Start>
+              <Stop>
+                <Event Provider="{9c205a39-1250-487d-abd7-e831c6290539}" Id="201" Version="0" />
+              </Stop>
+            </Region>
+
+            <!-->
+            Boot-PnP-SystemStart-Phase
+                        
+            Event-Based Start with provider=9c205a39-1250-487d-abd7-e831c6290539, id=202, and version=0
+            Event-Based Stop with provider=9c205a39-1250-487d-abd7-e831c6290539, id=203, and version=0
+            
+            Additionally, only match start to stop if the PIDs are the same.
+            <-->
+
+            <Region Name="Boot-PnP-SystemStart-Phase" Guid="{3826F5C1-6EC5-4046-A943-B27E965F3897}" >
+              <Match>
+                <Event PID="true" />
+              </Match>
+              <Start>
+                <Event Provider="{9c205a39-1250-487d-abd7-e831c6290539}" Id="202" Version="0" />
+              </Start>
+              <Stop>
+                <Event Provider="{9c205a39-1250-487d-abd7-e831c6290539}" Id="203" Version="0" />
+              </Stop>
+            </Region>
+          <!-->
+          End Boot-PreSessionInit-Phase
+          <-->
+          </Region>
+
+          <!-->
+          Boot-SessionInit-Phase
+                        
+          Event-Based Start with provider=43e63da5-41d1-4fbf-aded-1bbed98fdd1d, id=7, and version=0
+          Event-Based Stop with provider=dbe9b383-7cf3-4331-91cc-a3cb16a3b538, id=101, and version=0
+          
+          Children:
+            Boot-SessionInit-Session
+          <-->
+          
+          <Region Name="Boot-SessionInit-Phase" Guid="{FA473B22-58C7-4774-9EEE-C21B55F3A919}">
+            <Start>
+              <Event Provider="{43e63da5-41d1-4fbf-aded-1bbed98fdd1d}" Id="7" Version="0" />
+            </Start>
+            <Stop>
+              <Event Provider="{dbe9b383-7cf3-4331-91cc-a3cb16a3b538}" Id="101" Version="0" />
+            </Stop>
+            <!-->
+            Boot-SessionInit-Session
+            
+            Event-Based Start with provider=43e63da5-41d1-4fbf-aded-1bbed98fdd1d, id=1, version=0, and Flags=1056
+            Event-Based Stop with provider=43e63da5-41d1-4fbf-aded-1bbed98fdd1d, id=1, version=0, and Flags-2080
+            <-->
+            <Region Name="Boot-SessionInit-Session" Guid="{2DCB6CDA-CD88-4d0b-837F-34F4C12C25E2}">
+              <Start>
+                <Event Provider="{43e63da5-41d1-4fbf-aded-1bbed98fdd1d}" Id="1" Version="0" />
+                <PayloadIdentifier FieldName="Flags" FieldValue="1056" />
+              </Start>
+              <Stop>
+                <Event Provider="{43e63da5-41d1-4fbf-aded-1bbed98fdd1d}" Id="1" Version="0"/>
+                <PayloadIdentifier FieldName="Flags" FieldValue="2080" />
+              </Stop>
+            </Region>
+            <!-->
+            End Boot-SessionInit-Phase
+            <-->
+          </Region>
+          <!-->
+            Boot-SessionInit-Session
+            
+            Region-Based Start based off the stop of region: FA473B22-58C7-4774-9EEE-C21B55F3A919 (Boot-SessionInit-Phase)
+            Region-Based Stop based off the start of region: 75218788-563C-485e-BE8B-84E50583A009 (Boot-ExplorerInit)
+            <-->
+          
+          <Region Name="Boot-Winlogon-Phase" Guid="{4D34EEF3-D9AC-43ac-ABEA-EC376E73B7C5}">
+            <Start>
+              <Region RegionGuid="{FA473B22-58C7-4774-9EEE-C21B55F3A919}" />
+            </Start>
+            <Stop>
+              <Region RegionGuid="{75218788-563C-485e-BE8B-84E50583A009}" />
+            </Stop>
+          </Region>
+          
+          <!-->
+          Boot-SessionInit-Session
+            
+          Event-Based Start with provider=30336ed4-e327-447c-9de0-51b652c86108, id=27230, version=0, and Flags=1056
+          Event-Based Stop with provider=30336ed4-e327-447c-9de0-51b652c86108, id=27231, version=0, and Flags-2080
+          <-->
+          
+          <Region Name="Boot-ExplorerInit" Guid="{75218788-563C-485e-BE8B-84E50583A009}">
+            <Match>
+              <Event PID="true" />
+            </Match>
+            <Start>
+              <Event Provider="{30336ed4-e327-447c-9de0-51b652c86108}" Id="27230" Version="0" />
+            </Start>
+            <Stop>
+              <Event Provider="{30336ed4-e327-447c-9de0-51b652c86108}" Id="27231" Version="0" />
+            </Stop>
+          </Region>
+        <!-->
+        End Boot Main Path
+        <-->
+        </Region>
+        
+        <!-->
+        UNSUPPORTED REGION:
+        In future versions, this will contain the following region:
+          
+          Post On/Off
+          Region-Based Start based off the stop of region: 48E873C6-74CA-4ddb-9BB1-1D3B5F750D8C (Boot Main Path)
+          Idle-Based Stop based after we detect idle for 5000 ms
+          
+          Additionally, only match start to stop if the PIDs are the same.
+    
+          
+          <Region Guid="{BD4C89BE-6866-4376-954A-F3F48ACE2727}" Name="FastStartup-Resume-PostOnOff" FriendlyName="Post On/Off">
+            <Match>
+              <Event PID="true" />
+            </Match>
+            <Start>
+              <Region RegionGuid="{48E873C6-74CA-4ddb-9BB1-1D3B5F750D8C}"/>
+            </Start>
+            <Stop>
+              <Idle AccumulateMS="5000"/>
+            </Stop>
+          </Region>
+        <-->
+
+        <!-->
+        Console Session Disconnect
+            
+        Event-Based Start with provider=dbe9b383-7cf3-4331-91cc-a3cb16a3b538, id=801 version=0, and Event=8
+        Event-Based Stop with provider=dbe9b383-7cf3-4331-91cc-a3cb16a3b538, id=802 version=0, and Event=8
+            
+        Additionally, only match start to stop if the PIDs are the same.
+        <-->
+        
+        <Region Name="FastStartup-ConsoleSessionDisconnect" Guid="{F20E4D88-135F-45fd-8DF0-7DDF29E93EA9}" FriendlyName="Console Session Disconnect">
+          <Match>
+            <Event PID="true" />
+          </Match>
+          <Start>
+            <Event Provider="{dbe9b383-7cf3-4331-91cc-a3cb16a3b538}" Id="801" Version="0" />
+            <PayloadIdentifier FieldName="Event" FieldValue="8" />
+          </Start>
+          <Stop>
+            <Event Provider="{dbe9b383-7cf3-4331-91cc-a3cb16a3b538}" Id="802" Version="0" />
+            <PayloadIdentifier FieldName="Event" FieldValue="8" />
+          </Stop>
+        </Region>
+      </RegionRoot>
+    </Regions>
+  </Instrumentation>
+</InstrumentationManifest>

@@ -1,0 +1,143 @@
+Provider Name,Event Name,Process,Time (s),Id
+YYBrowser,YYBrowser/StartUp/win:Start,YYExplorer.exe (2888),15.209204242,111
+YYBrowser,YYBrowser/StartInfo/win:Start,YYExplorer.exe (2888),15.218146999,1
+YYBrowser,YYBrowser/StartInfo/win:Stop,YYExplorer.exe (2888),15.520369348,2
+YYBrowser,YYBrowser/ChromeDll/win:Start,YYExplorer.exe (2888),15.520462726,0
+YYBrowser,YYBrowser/ChromeDll/win:Stop,YYExplorer.exe (2888),15.542468595,10
+YYBrowser,YYBrowser/SandBox/win:Start,YYExplorer.exe (2888),15.542794195,33
+YYBrowser,YYBrowser/SandBox/win:Stop,YYExplorer.exe (2888),15.597534113,35
+YYBrowser,YYBrowser/ResourceDb/win:Start,YYExplorer.exe (2888),15.599007136,65
+YYBrowser,YYBrowser/ResourceDb/win:Stop,YYExplorer.exe (2888),15.682776791,66
+YYBrowser,YYBrowser/Pak/win:Start,YYExplorer.exe (2888),15.723885507,29
+YYBrowser,YYBrowser/Pak/win:Stop,YYExplorer.exe (2888),15.769033913,30
+YYBrowser,YYBrowser/CreateThreads/win:Start,YYExplorer.exe (2888),15.774311958,120
+YYBrowser,YYBrowser/CreateThreads/win:Stop,YYExplorer.exe (2888),15.778192759,121
+YYBrowser,YYBrowser/CreateProfile/win:Start,YYExplorer.exe (2888),15.805509918,3
+YYBrowser,YYBrowser/CreateProfile/win:Stop,YYExplorer.exe (2888),16.128092536,5
+YYBrowser,YYBrowser/PostProfileInit/win:Start,YYExplorer.exe (2888),16.128183470,130
+YYBrowser,YYBrowser/PostProfileInit/win:Stop,YYExplorer.exe (2888),16.134464715,131
+YYBrowser,YYBrowser/NewBrowser/win:Start,YYExplorer.exe (2888),16.149294184,19
+YYBrowser,YYBrowser/NewBrowser/win:Stop,YYExplorer.exe (2888),16.349821276,20
+YYBrowser,YYBrowser/ShowWindow/win:Start,YYExplorer.exe (2888),16.353197543,15
+YYBrowser,YYBrowser/StartUp/win:Stop,YYExplorer.exe (2888),16.452435155,112
+YYBrowser,YYBrowser/ShowWindow/win:Stop,YYExplorer.exe (2888),18.144511592,16
+Image,Image: Kernel Base,xperf.exe (1692),42.872395444,0
+Process,Process: Zombie,xperf.exe (1692),42.890433001,0
+FileIo,FileIo: DeletePath,Unknown,20.001001873,0
+FileIo,FileIo: DeletePath,Unknown,20.100484419,0
+FileIo,FileIo: DeletePath,Unknown,20.100917574,0
+FileIo,FileIo: DeletePath,Unknown,20.101037352,0
+FileIo,FileIo: DeletePath,Unknown,22.429750848,0
+FileIo,FileIo: RenamePath,Unknown,22.430318937,0
+FileIo,FileIo: DeletePath,Unknown,24.818140573,0
+FileIo,FileIo: DeletePath,Unknown,26.479532873,0
+FileIo,FileIo: DeletePath,Unknown,26.654398673,0
+FileIo,FileIo: RenamePath,Unknown,27.373990898,0
+FileIo,FileIo: RenamePath,Unknown,27.374663609,0
+FileIo,FileIo: RenamePath,Unknown,27.374824453,0
+FileIo,FileIo: DeletePath,Unknown,27.375020498,0
+FileIo,FileIo: RenamePath,Unknown,27.643955377,0
+FileIo,FileIo: RenamePath,Unknown,27.644570399,0
+FileIo,FileIo: RenamePath,Unknown,27.644748354,0
+FileIo,FileIo: DeletePath,Unknown,27.644981554,0
+FileIo,FileIo: DeletePath,Unknown,27.645336977,0
+FileIo,FileIo: DeletePath,Unknown,27.645492932,0
+FileIo,FileIo: RenamePath,Unknown,28.014404624,0
+FileIo,FileIo: RenamePath,Unknown,28.401524984,0
+FileIo,FileIo: RenamePath,Unknown,28.402151739,0
+FileIo,FileIo: RenamePath,Unknown,28.402313562,0
+FileIo,FileIo: DeletePath,Unknown,28.402532584,0
+FileIo,FileIo: DeletePath,Unknown,28.402887517,0
+FileIo,FileIo: DeletePath,Unknown,35.771275120,0
+FileIo,FileIo: DeletePath,Unknown,35.771450631,0
+FileIo,FileIo: RenamePath,Unknown,35.775951342,0
+FileIo,FileIo: RenamePath,Unknown,35.843691796,0
+FileIo,FileIo: RenamePath,Unknown,35.844312684,0
+FileIo,FileIo: RenamePath,Unknown,35.844467662,0
+FileIo,FileIo: DeletePath,Unknown,35.844684729,0
+FileIo,FileIo: DeletePath,Unknown,36.096840450,0
+FileIo,FileIo: RenamePath,Unknown,36.097446183,0
+FileIo,FileIo: DeletePath,Unknown,36.311811277,0
+FileIo,FileIo: DeletePath,Unknown,36.509754102,0
+FileIo,FileIo: RenamePath,Unknown,36.515145081,0
+FileIo,FileIo: DeletePath,Unknown,36.625154873,0
+FileIo,FileIo: RenamePath,Unknown,36.769874313,0
+FileIo,FileIo: RenamePath,Unknown,36.860524591,0
+FileIo,FileIo: DeletePath,Unknown,36.860765614,0
+FileIo,FileIo: RenamePath,Unknown,37.345878875,0
+FileIo,FileIo: RenamePath,Unknown,37.346445986,0
+FileIo,FileIo: RenamePath,Unknown,37.346617097,0
+FileIo,FileIo: DeletePath,Unknown,37.346818031,0
+FileIo,FileIo: DeletePath,Unknown,37.347169542,0
+FileIo,FileIo: DeletePath,Unknown,37.347347498,0
+FileIo,FileIo: DeletePath,Unknown,37.441227376,0
+FileIo,FileIo: DeletePath,Unknown,37.441775421,0
+FileIo,FileIo: DeletePath,Unknown,37.442103954,0
+FileIo,FileIo: DeletePath,Unknown,37.442399732,0
+FileIo,FileIo: DeletePath,Unknown,37.442683287,0
+FileIo,FileIo: DeletePath,Unknown,37.442997643,0
+FileIo,FileIo: DeletePath,Unknown,37.537391833,0
+FileIo,FileIo: DeletePath,Unknown,37.627583533,0
+FileIo,FileIo: DeletePath,Unknown,40.814347493,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Scenario Info [Compressed],Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Interaction Class Info,Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Interaction Class Info,Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Interaction Class Info,Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Interaction Class Info,Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Interaction Class Info,Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Interaction Class Info,Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Interaction Class Info,Idle (0),42.899079980,0
+PerfTrackMetadata,PerfTrack Metadata: Interaction Class Info,Idle (0),42.899079980,0
+WinSATAssessment,WinSAT: WinSPR Compressed Info,Idle (0),42.899079980,0
+WinSATAssessment,WinSAT: Metrics Compressed Info,Idle (0),42.899079980,0
+WinSATAssessment,WinSAT: SystemConfig Compressed Info,Idle (0),42.899079980,0

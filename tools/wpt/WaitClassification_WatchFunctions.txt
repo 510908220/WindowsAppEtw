@@ -1,0 +1,158 @@
+#
+# This is a list of functions that are not meant to have long waits,
+# so if stacks with long waits contain these functions, it is probably
+# a performance problem.
+#
+
+# Locks
+ExpWaitForResource 
+RtlpWaitOnCriticalSection 
+EnterCrit
+# EnterSharedCrit
+GreAcquireSemaphore
+GreAcquireSemaphoreShared
+ExfAcquirePushLockExclusive
+ExfAcquirePushLockShared
+FltAcquirePushLockShared
+# ExAcquireSharedStarveExclusive
+# ExAcquireFastMutex
+ExfAcquireRundownProtection
+
+# Memory / flushing
+MmAccessFault                 # page fault
+MmWorkingSetManager 
+MmCreateSection 
+MmFlushSection                # flushing
+DiskFlushDispatch 
+VmFlushBuffers
+PmFlushBuffers
+NtFlushVirtualMemory
+NtFlushBuffersFile
+
+# Registry
+NtOpenKey
+NtFlushKey 
+NtEnumerateKey 
+NtQueryKey
+NtQueryValueKey
+NtSetValueKey
+NtCreateKey
+NtDeleteValueKey
+HvSyncHive
+ZwFlushKey
+
+# Mouse, keyboard, etc.
+InputApc
+
+# NTFS
+NtfsCommonRead
+NtfsCommonWrite
+NtfsAcquireResourceShared
+NtfsAcquireResourceExclusive
+NtfsAcquirePagingResourceExclusive 
+NtfsAcquirePagingResourceShared 
+NtfsAcquireSharedVcb
+NtfsAcquireSharedFcb
+NtfsAcquireExclusiveFcb
+# NtfsAcquireSharedScbForTransaction
+# NtfsAcquireScbForLazyWrite
+# NtfsAcquireFcbWithPaging
+# LfsAcquireLfcbShared
+# LfsAcquireLfcbExclusive
+# LfsAcquireLchShared
+# LfsAcquireLchExclusive
+TxfFlushTxfLsnForNtfsLsn
+NtfsWaitOnIo
+NtfsCommitCurrentTransaction
+GetOverlappedResult
+
+# Network IO
+MupCreate
+MupFsControl
+MupStateMachine
+
+# IE
+CBrowserFrame::AddTab
+
+# Outlook
+LargePST::NDB::WaitForMutex
+LargePST::FileRead 
+CFileCache::EnterFileMutex 
+CFileCache::EnterMutex
+FileCacheRead 
+FileCacheWrite 
+IopAcquireFileObjectLock 
+PSTCrashRecovery
+
+# PnP
+PNP_QueryRemove
+PNP_GetDeviceList
+PNP_GetDeviceRegProp
+PNP_ValidateDeviceInstance
+PNP_GetFirstLogConf
+PNP_GetInterfaceDeviceList
+PNP_GetObjectProp
+
+# AV
+CheckFileWaitInTrap
+WaitInTrap
+
+# Misc
+_QueryClassInterface          # verclsid action going on
+CJSProxy::dnsResolve          # DNS resolution
+RxFsdDispatch                 # network file system I/O
+SLOpen                        # sometimes the Software Licensing service won't start
+LdrLoadDll                    # DLL loading
+LdrLockLoaderLock 
+LdrGetDllHandleEx
+LdrpCheckForLoadedDll
+GetProcAddress 
+GetModuleHandleExA            # kernel32 api that causes lock contention
+GetModuleHandleExW
+GetModuleHandleW
+ApphelpCheckShellObject 
+JetSeek 
+PfProcessCreateNotification   # app launch prefetching
+SetupDiCallClassInstaller     # setupapi.dll
+RpcBroadcastSystemMessage     # lsm.exe
+BroadcastPnpWindowMessage     # hits a 5-second timeout sometimes
+NtUserScrollDC 
+xxxDWP_NCMouse 
+xxxMouseActivate 
+CoCreateInstanceEx 
+CAudioCompressor::OnSample    # audio glitching
+CVideoBaseCodec::OnSample     # video glitching
+CDoc::OnMouseMessage          # mouse processing in mshtml.dll
+CComposition::Compose         # DWM drawing
+CWindowList::UpdateScene      # more DWM
+CToolbar::TBPaint
+OnDwpNcLButtonDown   
+OnDwpNcMouseMove
+OnDwpNcMouseLeave
+OnDwpNcPaint
+RChangeServiceConfigW 
+ZwFlushBuffersFile 
+SHParseDisplayName 
+SHGetUserDisplayName
+IsTrustedFile 
+RtlAllocateHeap
+CcWaitForUninitializeCacheMap
+FWOpenPolicyStore             # firewall
+FWGetGlobalConfig
+PSGetPropertyDescription
+SHGetIconIndexFromPIDL
+SHGetAttributes
+GetFileAttributesW
+ZwQueryAttributesFile
+GetDiskFreeSpaceExW
+NtGdiGetCharABCWidths
+# AlpcpReceiveSynchronousReply  # synchronous RPC call
+# CUrlMon::BindToStorage
+# WinHttpSendRequest
+LpcGetUserName                # lsass function, seen hitting 20-second timeout
+CuipCheckNetworkFileAccess    # consent.exe
+LoadUserProfileW
+# Query_Main                  # DNS query
+QueryDns
+InternetInitializeAutoProxySync
+

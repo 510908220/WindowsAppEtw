@@ -1,0 +1,200 @@
+Process,Path Name,Disk Service Time,Size,IO Time
+svchost.exe (2012),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\YYExplorer.exe,9691.734,4096,523255.399
+svchost.exe (2012),C:\ProgramData\Microsoft\Windows Defender\Scans\mpcache-5D723B4BB92F3F19DBEA53F1D41777770A61E0FA.bin.5B,13499.691,12288,515255.709
+svchost.exe (2012),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\YYExplorer.exe,7421.334,4096,138098.906
+Dbgview.exe (2660),C:\Windows\winsxs\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\comctl32.dll,11616.002,4096,41036.849
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\resources.pak,3254.045,32768,33297.248
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\resources.pak,7681.912,32768,31910.270
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,14947.780,376832,31338.759
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,8331.646,1044480,30564.359
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Local\YYExplorer\User Data\Default\Web Data,9522.579,4096,28029.959
+System (4),C:\Users\Administrator\AppData\Local\YYExplorer\User Data\resource.db,11483.024,16384,25543.958
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\resources.pak,12859.735,32768,25141.114
+YYExplorer.exe (2888),C:\$Mft,12573.246,4096,24442.980
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\resources.pak,11743.112,32768,23826.003
+Dbgview.exe (2660),C:\Windows\winsxs\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\comctl32.dll,10803.957,32768,22537.780
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,22300.669,2097152,22300.669
+Dbgview.exe (2660),C:\Windows\Fonts\simsun.ttc,12389.424,32768,22113.913
+Dbgview.exe (2660),C:\Windows\Fonts\simsun.ttc,11133.468,32768,21349.780
+Dbgview.exe (2660),C:\Windows\Fonts\simsun.ttc,9234.623,32768,20799.780
+YYExplorer.exe (2888),C:\Windows\SysWOW64\shell32.dll,9493.734,32768,20063.024
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Local\YYExplorer\User Data\Default\TransportSecurity,8579.512,1024,19863.069
+Dbgview.exe (2660),C:\Windows\Fonts\simsun.ttc,6591.690,24576,19375.646
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,19338.491,614400,19338.491
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Local\YYExplorer\User Data\resource.db-journal,7435.023,4096,18600.269
+YYExplorer.exe (2888),C:\Windows\SysWOW64\ntdll.dll,17791.646,32768,17791.646
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\resources.pak,9055.202,32768,17630.313
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Local\YYExplorer\User Data\Default,10053.023,4096,17601.957
+Dbgview.exe (2660),C:\Windows\Fonts\simsun.ttc,7106.979,32768,17562.846
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\resources.pak,11829.157,32768,16808.491
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\resources.pak,5783.557,32768,16807.513
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\resources.pak,10324.356,32768,16806.535
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\resources.pak,10566.357,32768,16805.557
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\resources.pak,9806.623,32768,16803.602
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,16439.868,1024000,16439.868
+YYExplorer.exe (2888),C:\Windows\SysWOW64\shell32.dll,8995.557,32768,16190.535
+Dbgview.exe (2660),C:\Windows\Fonts\simsun.ttc,6350.667,32768,15325.201
+YYExplorer.exe (2888),C:\Windows\Fonts\msyh.ttf,208.267,32768,15286.090
+Dbgview.exe (2660),C:\Windows\winsxs\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\comctl32.dll,11807.157,32768,14711.157
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Local\YYExplorer\User Data\Default\RestoreTabs.json,5618.801,3072,14302.446
+YYExplorer.exe (2888),C:\$Mft,8247.068,4096,13827.735
+dwm.exe (1496),C:\Windows\system32\uDWM.dll,11551.468,20480,13410.712
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Local\YYExplorer\User Data\Default,13119.823,4096,13119.823
+System (4),C:\Users\Administrator\AppData\Local\YYExplorer\User Data\Default\Web Data,2819.423,4096,13094.401
+Dbgview.exe (2660),C:\Windows\Fonts\simsun.ttc,12819.646,32768,13041.112
+YYExplorer.exe (2888),C:\$Mft,124.178,4096,12966.801
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,9558.757,61440,12911.068
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Local\YYExplorer\User Data\Default,5428.623,4096,12787.379
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,12279.423,1028096,12279.423
+YYExplorer.exe (2888),C:\Windows\SysWOW64\shell32.dll,7174.445,32768,12233.957
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome_100_percent.pak,12218.312,32768,12218.312
+YYExplorer.exe (2888),C:\Windows\SysWOW64\uxtheme.dll,12212.934,32768,12212.934
+YYExplorer.exe (2888),C:\$Mft,12150.845,4096,12150.845
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\locales\zh-CN.pak,11994.401,32768,11994.401
+System (4),C:\Users\Administrator\AppData\Local\YYExplorer\User Data\resource.db-journal,11756.801,12288,11756.801
+YYExplorer.exe (2888),C:\$Mft,11550.490,4096,11550.490
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,11290.890,733184,11290.890
+YYExplorer.exe (2888),C:\Windows\system32\wow64cpu.dll,11202.890,512,11202.890
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\resources.pak,11059.156,32768,11059.156
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\resources.pak,212.178,32768,10902.712
+Dbgview.exe (2660),C:\Windows\SysWOW64\gdi32.dll,5090.801,32768,10811.779
+YYExplorer.exe (2888),C:\$Mft,10533.601,4096,10533.601
+System (4),C:\Users\Administrator\AppData\Local\YYExplorer\User Data\Default\Web Data,3154.311,4096,10278.890
+YYExplorer.exe (2888),C:\Windows\SysWOW64\KBDUS.DLL,10234.401,4096,10234.401
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\locales\zh-CN.pak,10137.601,32768,10137.601
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\locales\zh-CN.pak,9994.356,32768,9994.356
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\resources.pak,9900.979,32768,9900.979
+YYExplorer.exe (2888),C:\$Mft,9722.534,4096,9722.534
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\resources.pak,211.200,32768,9614.978
+YYExplorer.exe (2888),C:\Windows\Fonts\msyhbd.ttf,9393.023,32768,9393.023
+YYExplorer.exe (2888),C:\Windows\SysWOW64\user32.dll,9382.756,32768,9382.756
+YYExplorer.exe (2888),C:\Windows\Fonts\msyhbd.ttf,186.756,32768,9015.112
+YYExplorer.exe (2888),C:\Windows\SysWOW64\msctf.dll,8998.001,8192,8998.001
+YYExplorer.exe (2888),C:\$Mft,8954.490,4096,8954.490
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\locales\zh-CN.pak,8636.712,32768,8636.712
+YYExplorer.exe (2888),C:\$Mft,8512.534,4096,8512.534
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,8501.778,139264,8501.778
+YYExplorer.exe (2888),C:\$Mft,8501.289,4096,8501.289
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,8388.356,36864,8388.356
+YYExplorer.exe (2888),C:\Windows\SysWOW64\rpcrt4.dll,8355.601,32768,8355.601
+System (4),C:\Windows\Prefetch\ReadyBoot\ReadyBoot.etl,1433.422,262144,8257.334
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,8241.689,20480,8241.689
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome_100_percent.pak,7777.734,32768,7777.734
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\resources.pak,7499.556,32768,7499.556
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,2155.023,131072,7483.912
+System (4),C:\Users\Administrator\AppData\Local\YYExplorer\User Data\Default\Web Data,6710.979,4096,7129.467
+YYExplorer.exe (2888),C:\$Mft,6984.267,4096,6984.267
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome_100_percent.pak,6910.445,32768,6910.445
+YYExplorer.exe (2888),C:\Windows\Fonts\msyhbd.ttf,6803.867,32768,6803.867
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Local\YYExplorer\User Data\resource.db,6724.667,4096,6724.667
+YYExplorer.exe (2888),C:\Windows\SysWOW64\rpcrt4.dll,6576.045,24576,6576.045
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,6247.511,36864,6247.511
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Local\YYExplorer\User Data,6116.978,4096,6116.978
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,6072.000,36864,6072.000
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\resources.pak,6039.245,32768,6039.245
+YYExplorer.exe (2888),C:\Windows\SysWOW64\gdi32.dll,5989.867,24576,5989.867
+YYExplorer.exe (2888),C:\Windows\SysWOW64\imm32.dll,5911.645,32768,5911.645
+YYExplorer.exe (2888),C:\Windows\Fonts\msyhbd.ttf,5839.778,32768,5839.778
+System (4),C:\Users\Administrator\AppData\Local\YYExplorer\User Data\resource.db,5340.134,24576,5818.756
+Dbgview.exe (2660),C:\Windows\Fonts\simsun.ttc,110.978,4096,5803.111
+YYExplorer.exe (2888),C:\$Mft,5718.534,4096,5718.534
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0,5706.800,4096,5706.800
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,5557.689,176128,5557.689
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\locales\zh-CN.pak,151.556,12288,5429.600
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,5408.578,192512,5408.578
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,5374.845,245760,5374.845
+YYExplorer.exe (2888),C:\$Mft,5362.622,4096,5362.622
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,5295.645,90112,5295.645
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,5180.756,237568,5180.756
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,5017.467,163840,5017.467
+YYExplorer.exe (2888),C:\Windows\SysWOW64\kernel32.dll,4990.578,32768,4990.578
+YYExplorer.exe (2888),C:\Windows\Fonts\msyh.ttf,4981.778,32768,4981.778
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,4809.200,172032,4809.200
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,4759.333,77824,4759.333
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,4447.911,512000,4447.911
+YYExplorer.exe (2888),C:\Windows\Fonts\msyh.ttf,4389.245,28672,4389.245
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,4094.933,299008,4094.933
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,3888.622,155648,3888.622
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,3703.822,364544,3703.822
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,3618.267,102400,3618.267
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,3556.667,20480,3556.667
+System (4),C:\kernel.etl,684.445,131072,3525.867
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,3395.822,184320,3395.822
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,3288.267,339968,3288.267
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,3281.911,36864,3281.911
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,3174.355,36864,3174.355
+YYExplorer.exe (2888),C:\$Mft,3084.889,4096,3084.889
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,2627.778,36864,2627.778
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,2605.289,229376,2605.289
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,2587.200,36864,2587.200
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,2280.666,36864,2280.666
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Local\YYExplorer\User Data\Default\Web Data-journal,2200.000,1024,2200.000
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,1951.155,196608,1951.155
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,1914.000,36864,1914.000
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,1883.200,36864,1883.200
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,1882.711,98304,1882.711
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,1878.311,45056,1878.311
+YYExplorer.exe (2888),C:\$Mft,72.845,4096,1864.622
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,1815.244,69632,1815.244
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,1713.066,36864,1713.066
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,1690.089,20480,1690.089
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,1657.333,69632,1657.333
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,1601.111,20480,1601.111
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,1544.889,36864,1544.889
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,1486.711,36864,1486.711
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,1349.822,36864,1349.822
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,1173.333,20480,1173.333
+YYExplorer.exe (2888),C:\Windows\Fonts\msyh.ttf,194.578,32768,855.066
+System (4),C:\kernel.etl,745.066,131072,745.066
+System (4),C:\Users\Administrator\AppData\Local\YYExplorer\User Data\resource.db,516.755,86016,516.755
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome.dll,458.088,81920,458.088
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\locales\zh-CN.pak,441.466,32768,441.466
+System (4),C:\Users\Administrator\AppData\Local\YYExplorer\User Data\Default\Web Data,320.222,53248,435.600
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\resources.pak,289.422,32768,297.733
+YYExplorer.exe (2888),C:\Windows\Fonts\msyhbd.ttf,282.088,32768,282.088
+YYExplorer.exe (2888),C:\Windows\Fonts\msyhbd.ttf,281.111,32768,281.111
+YYExplorer.exe (2888),C:\Windows\Fonts\msyhbd.ttf,278.666,32768,278.666
+YYExplorer.exe (2888),C:\Windows\Fonts\msyhbd.ttf,278.666,32768,278.666
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\resources.pak,275.733,32768,275.733
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\resources.pak,274.266,32768,274.266
+YYExplorer.exe (2888),C:\Windows\Fonts\msyhbd.ttf,272.800,32768,272.800
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome_100_percent.pak,265.466,32768,265.466
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome_100_percent.pak,264.488,32768,264.488
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome_100_percent.pak,264.000,32768,264.000
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome_100_percent.pak,259.111,32768,259.111
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome_100_percent.pak,257.644,32768,257.644
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome_100_percent.pak,252.755,32768,252.755
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome_100_percent.pak,251.288,32768,251.288
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome_100_percent.pak,249.822,32768,249.822
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome_100_percent.pak,249.333,32768,249.333
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome_100_percent.pak,248.844,32768,248.844
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome_100_percent.pak,246.888,32768,246.888
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome_100_percent.pak,245.911,32768,245.911
+YYExplorer.exe (2888),C:\Windows\Fonts\msyh.ttf,245.422,32768,245.422
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome_100_percent.pak,244.933,32768,244.933
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\resources.pak,242.977,32768,242.977
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome_100_percent.pak,242.977,32768,242.977
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome_100_percent.pak,241.511,32768,241.511
+YYExplorer.exe (2888),C:\Windows\Fonts\msyhbd.ttf,237.600,32768,237.600
+YYExplorer.exe (2888),C:\Windows\Fonts\msyh.ttf,237.600,28672,237.600
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome_100_percent.pak,237.111,32768,237.111
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome_100_percent.pak,236.622,32768,236.622
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome_100_percent.pak,235.644,32768,235.644
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome_100_percent.pak,235.155,32768,235.155
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome_100_percent.pak,234.666,32768,234.666
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome_100_percent.pak,232.711,31232,232.711
+YYExplorer.exe (2888),C:\Windows\Fonts\msyhbd.ttf,228.311,32768,228.311
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome_100_percent.pak,197.511,20480,197.511
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome_100_percent.pak,196.533,20480,196.533
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome_100_percent.pak,192.622,20480,192.622
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome_100_percent.pak,192.133,16384,192.133
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Local\YYExplorer\User Data\Default,180.888,4096,180.888
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\resources.pak,180.888,8192,180.888
+YYExplorer.exe (2888),C:\Windows\Fonts\msyh.ttf,177.955,16384,177.955
+YYExplorer.exe (2888),C:\Windows\SysWOW64\KBDUS.DLL,165.244,512,165.244
+YYExplorer.exe (2888),C:\Windows\Fonts\msyh.ttf,165.244,8192,165.244
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\YYExplorer.exe,161.333,8192,161.333
+YYExplorer.exe (2888),C:\$Mft,159.866,4096,159.866
+YYExplorer.exe (2888),C:\Windows\SysWOW64\KBDUS.DLL,158.400,3584,158.400
+YYExplorer.exe (2888),C:\Users\Administrator\AppData\Roaming\duowan\YYExplorer\3.6.4538.0\chrome_100_percent.pak,157.911,8192,157.911
+YYExplorer.exe (2888),C:\Windows\SysWOW64\KBDUS.DLL,150.088,1536,150.088

@@ -1,0 +1,38 @@
+#
+# These are thread-start functions for threads that are likely to
+# impact the user if they are delayed in places they shouldn't be.
+#
+
+# Explorer
+# Task Manager
+wWinMainCRTStartup
+
+# Explorer
+CTray::MainThreadProc
+CSysTray::SysTrayThreadProc
+
+# Internet Explorer
+CTabWindow::_TabWindowThreadProc
+_IsoThreadProc
+wWinMain
+
+# csrss
+ConsoleInputThread
+xxxDesktopThread
+RawInputThread
+
+# DWM
+_WinMainStartup
+CDesktopManager::DwmEventThreadProc
+CPartitionThread::ThreadMain
+CPortBase::PortThread
+VidSchiWorkerThread
+
+# CDD
+PresentWorkerthread
+
+# Outlook
+# Word
+# PowerPoint
+# Excel
+WinMainCRTStartup

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Tag Name="">
+  <Tag Name="HTML">
+    <Tag Name="Display">
+      <Entrypoint Module="mshtml.dll" Method="CDoc::Paint*"/>
+      <Entrypoint Module="mshtml.dll" Method="CView::Render*"/>
+    </Tag>
+    <Tag Name="Layout">
+      <Entrypoint Module="mshtml.dll" Method="CView::EnsureView"/>
+      <Entrypoint Module="mshtml.dll" Method="CView::CloseDisplayTree"/>
+      <Entrypoint Module="mshtml.dll" Method="CView::FinalizeDisplayTree"/>
+      <Entrypoint Module="mshtml.dll" Method="CLayout*"/>
+      <Entrypoint Module="mshtml.dll" Method="Ptls5::*"/>
+    </Tag>
+    <Tag Name="Formatting">
+      <Entrypoint Module="mshtml.dll" Method="CView::ExecuteInvalidationTasks"/>
+      <Entrypoint Module="mshtml.dll" Method="CTreeNode::ComputeFormats"/>
+      <Entrypoint Module="mshtml.dll" Method="CStyleSheetArray::*"/>
+      <Entrypoint Module="mshtml.dll" Method="*ApplyStyle*"/>
+    </Tag>
+    <Tag Name="Parsing">
+      <Entrypoint Module="mshtml.dll" Method="CHtmParse*"/>
+      <Entrypoint Module="mshtml.dll" Method="CHtmPre*"/>
+      <Entrypoint Module="mshtml.dll" Method="CHtmPost*"/>
+      <Entrypoint Module="mshtml.dll" Method="CPreParser*"/>
+      <Tag Name="CSS">
+        <Entrypoint Module="mshtml.dll" Method="CStyleSheet::*Pars*"/>
+        <Entrypoint Module="mshtml.dll" Method="CSS*::RuleSet"/>
+        <Entrypoint Module="mshtml.dll" Method="ProcessCSSText"/>
+      </Tag>
+    </Tag>
+    <Tag Name="Script">
+      <Tag Name="GC">
+        <Entrypoint Module="jscript9.dll" Method="Recycler::*"/>
+      </Tag>
+      <Entrypoint Module="jscript9.dll"/>
+    </Tag>
+    <Tag Name="Canvas">
+      <Entrypoint Module="mshtml.dll" Method="CCanvas*"/>
+      <Entrypoint Module="mshtml.dll" Method="CHTMLCanvasElement::*"/>
+    </Tag>
+    <Tag Name="OM">
+      <Entrypoint Module="mshtml.dll" Method="CFastDOM::*"/>
+      <Entrypoint Module="mshtml.dll" Method="Method_*"/>
+      <Entrypoint Module="mshtml.dll" Method="GS_*"/>
+      <Entrypoint Module="mshtml.dll" Method="G_*"/>
+    </Tag>
+    <Tag Name="ImageDecoding">
+      <Entrypoint Module="mshtml.dll" Method="CImgTask*"/>
+    </Tag>
+    <Tag Name="Networking">
+      <Tag Name="WinINet">
+        <Entrypoint Module="wininet.dll"/>
+      </Tag>
+    </Tag>
+  </Tag>
+  <Tag Name="XAML">
+    <Entrypoint Module="windows.ui.xaml.dll" Method="DirectUI::FrameworkView::*"/>
+    <Entrypoint Module="windows.ui.xaml.dll" Method="CompositorScheduler::RenderThreadMain"/>
+    <Tag Name="Layout">
+      <Entrypoint Module="windows.ui.xaml.dll" Method="CLayoutManager::UpdateLayout"/>
+      <Tag Name="Measure">
+        <Entrypoint Module="windows.ui.xaml.dll" Method="CUIElement::Measure"/>
+      </Tag>
+      <Tag Name="Arrange">
+        <Entrypoint Module="windows.ui.xaml.dll" Method="CUIElement::Arrange"/>
+      </Tag>
+    </Tag>
+    <Tag Name="Rendering">
+      <Entrypoint Module="windows.ui.xaml.dll" Method="CCoreServices::RenderWalk"/>
+    </Tag>
+    <Tag Name="CommitGraphicsDevice">
+      <Entrypoint Module="windows.ui.xaml.dll" Method="DCompTreeHost::CommitSecondaryDevice"/>
+      <Entrypoint Module="windows.ui.xaml.dll" Method="DCompTreeHost::CommitMainDevice"/>
+    </Tag>
+    <Tag Name="CompositionTargetRendering">
+      <Entrypoint Module="windows.ui.xaml.dll" Method="CCoreServices::CallPerFrameCallback"/>
+    </Tag>
+    <Tag Name="ApplicationActivate">
+      <Entrypoint Module="windows.ui.xaml.dll" Method="DirectUI::FrameworkView::Initialize"/>
+      <Entrypoint Module="windows.ui.xaml.dll" Method="DirectUI::ApplicationFactory::Start"/>
+    </Tag>
+    <Tag Name="EventCallback">
+      <Entrypoint Module="windows.ui.xaml.dll" Method="AgCoreCallbacks::FireEvent"/>
+    </Tag>
+    <Tag Name="ProcessInput">
+      <Entrypoint Module="windows.ui.xaml.dll" Method="CInputManager::*"/>
+    </Tag>
+    <Tag Name="Tick">
+      <Entrypoint Module="windows.ui.xaml.dll" Method="CCoreServices::Tick"/>
+      <Tag Name="UpdateAnimations">
+        <Entrypoint Module="windows.ui.xaml.dll" Method="CTimeManager::Tick"/>
+        <Entrypoint Module="windows.ui.xaml.dll" Method="CCoreServices::FlushDeferredAnimationOperationQueue"/>
+        <Entrypoint Module="windows.ui.xaml.dll" Method="CHardwareCompositor::IndependentTick"/>
+      </Tag>
+      <Tag Name="UpdateViewports">
+        <Entrypoint Module="windows.ui.xaml.dll" Method="CCompositorDirectManipulationViewport::UpdateTransform"/>
+      </Tag>
+      <Tag Name="AddMemoryPressure">
+        <Entrypoint Module="windows.ui.xaml.dll" Method="ReportMemoryPressureToGC"/>
+      </Tag>
+    </Tag>
+    <Tag Name="Parsing">
+      <Entrypoint Module="windows.ui.xaml.dll" Method="CCoreServices::LoadXaml"/>
+      <Entrypoint Module="windows.ui.xaml.dll" Method="CCoreServices::ParseXaml*"/>
+    </Tag>
+    <Tag Name="WarpTextRasterize">
+      <Entrypoint Module="D3D10Warp.dll" Method="Task::ExecuteTask"/>
+    </Tag>
+    <Tag Name="ImageDecode">
+      <Entrypoint Module="windows.ui.xaml.dll" Method="AsyncDecodeToSurfaceTask::Execute"/>
+    </Tag>
+    <Tag Name="CreateGraphicsDevice">
+      <Entrypoint Module="windows.ui.xaml.dll" Method="WindowsGraphicsDeviceManager::*"/>
+    </Tag>
+  </Tag>
+  <Tag Name="CLR">
+    <Tag Name="LoadAssembly">
+      <Entrypoint Module="clr.dll" Method="*LoadAssembly*"/>
+    </Tag>
+    <Tag Name="GC">
+      <Entrypoint Module="clr.dll" Method="*GC*"/>
+    </Tag>
+    <Tag Name="JIT">
+      <Entrypoint Module="clr.dll" Method="JIT*"/>
+    </Tag>
+    <Tag Name="TypeConversion">
+      <Entrypoint Module="clr.dll" Method="StubHelpers::InterfaceMarshaler__ConvertToNative"/>
+      <Entrypoint Module="clr.dll" Method="StubHelpers::InterfaceMarshaler__ConvertToManaged"/>
+      <Entrypoint Module="clr.dll" Method="StubHelpers::GetCOMIPFromRCW_WinRT"/>
+    </Tag>
+  </Tag>
+  <Tag Name="System">
+    <Tag Name="ETW Overhead">
+      <Entrypoint Module="nt*.exe" Method="Etw*"/>
+      <Entrypoint Module="ntdll.dll" Method="Etw*"/>
+    </Tag>
+    <Tag Name="Interrupts + DPCs">
+      <Entrypoint Module="nt*.exe" Method="KiRetireDpcList"/>
+      <Entrypoint Module="nt*.exe" Method="Ki*Interrupt*"/>
+      <Entrypoint Module="nt*.exe" Method="KiExitDispatcher"/>
+      <Entrypoint Module="nt*.exe" Method="KiIpiServiceRoutine"/>
+      <Entrypoint Module="nt*.exe" Method="IopPassiveInterruptWorker"/>
+      <Entrypoint Module="hal*.dll" Method="HalpIpiHandler"/>
+    </Tag>
+    <Tag Name="ContextSwitch">
+      <Entrypoint Module="nt*.exe" Method="KiSwapThread"/>
+    </Tag>
+    <Tag Name="LoadLibrary">
+      <Entrypoint Module="ntdll.dll" Method="Ldr*"/>
+      <Entrypoint Module="kernel*.dll" Method="LoadLibrary*"/>
+      <Entrypoint Module="kernel*.dll" Method="FreeLibrary*"/>
+      <Entrypoint Module="kernel32.dll" Method="GetProcAddress"/>
+    </Tag>
+    <Tag Name="ThreadPool">
+      <Entrypoint Module="ntdll.dll" Method="Tp*"/>
+      <Entrypoint Module="ntdll.dll" Method="*Tp*Callback"/>
+    </Tag>
+  </Tag>
+</Tag>

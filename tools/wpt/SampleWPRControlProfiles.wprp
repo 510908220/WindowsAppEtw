@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<WindowsPerformanceRecorder
+    Author="EcoSystem Performance Platform"
+    Comments="Sample"
+    Company="Microsoft Corporation"
+    Copyright="Microsoft Corporation"
+    Team="EcoSystem Performance Platform"
+    Version="1.0"
+    >
+  <Profiles>
+    <SystemCollector
+        Id="SystemCollector_FileIO"
+        Name="NT Kernel Logger"
+        >
+      <BufferSize Value="128"/>
+      <Buffers Value="80"/>
+    </SystemCollector>
+    <EventCollector
+        Id="EventCollector_KernelPower"
+        Name="WPR Sample Event Collector"
+        >
+      <BufferSize Value="128"/>
+      <Buffers Value="32"/>
+    </EventCollector>
+    <SystemProvider Id="SystemProvider_FileIO">
+      <Keywords>
+        <Keyword Value="DiskIO"/>
+        <Keyword Value="FileIO"/>
+        <Keyword Value="FileIOInit"/>
+        <Keyword Value="HardFaults"/>
+      </Keywords>
+      <Stacks>
+        <Stack Value="FileCleanup"/>
+        <Stack Value="FileClose"/>
+        <Stack Value="FileCreate"/>
+        <Stack Value="FileDelete"/>
+        <Stack Value="FileDirEnum"/>
+        <Stack Value="FileDirNotify"/>
+        <Stack Value="FileFlush"/>
+        <Stack Value="FileFSCTL"/>
+        <Stack Value="FileOpEnd"/>
+        <Stack Value="FileQueryInformation"/>
+        <Stack Value="FileRead"/>
+        <Stack Value="FileRename"/>
+        <Stack Value="FileSetInformation"/>
+        <Stack Value="FileWrite"/>
+      </Stacks>
+    </SystemProvider>
+    <EventProvider
+        Id="EventProvider_DotNetProvider"
+        Level="5"
+        Name="DotNetProvider"
+        NonPagedMemory="true"
+        >
+      <Keywords>
+        <Keyword Value="0x98"/>
+      </Keywords>
+      <CaptureStateOnSave>
+        <Keyword Value="0x118"/>
+      </CaptureStateOnSave>
+    </EventProvider>
+    <EventProvider
+        Id="EventProvider_Microsoft-Windows-Kernel-Power_AC-DC-State"
+        Name="Microsoft-Windows-Kernel-Power"
+        NonPagedMemory="true"
+        >
+      <Keywords>
+        <Keyword Value="0x4"/>
+      </Keywords>
+      <CaptureStateOnSave>
+        <Keyword Value="0x4"/>
+      </CaptureStateOnSave>
+    </EventProvider>
+    <Profile
+        Description="Sample profile: File I/O activity"
+        DetailLevel="Verbose"
+        Id="MyFileIO.Verbose.File"
+        LoggingMode="File"
+        Name="MyFileIO"
+        >
+      <ProblemCategories>
+        <ProblemCategory Value="First Level Triage"/>
+      </ProblemCategories>
+      <Collectors>
+        <SystemCollectorId Value="SystemCollector_FileIO">
+          <SystemProviderId Value="SystemProvider_FileIO"/>
+        </SystemCollectorId>
+        <EventCollectorId Value="EventCollector_KernelPower">
+          <EventProviders>
+            <EventProviderId Value="EventProvider_DotNetProvider"/>
+            <EventProviderId Value="EventProvider_Microsoft-Windows-Kernel-Power_AC-DC-State"/>
+          </EventProviders>
+        </EventCollectorId>
+      </Collectors>
+    </Profile>
+    <Profile
+        Base="MyFileIO.Verbose.File"
+        Description="Sample profile: File I/O activity"
+        DetailLevel="Verbose"
+        Id="MyFileIO.Verbose.Memory"
+        LoggingMode="Memory"
+        Name="MyFileIO"
+        >
+      <Collectors Operation="Add">
+        <SystemCollectorId Value="SystemCollector_FileIO">
+          <Buffers
+              PercentageOfTotalMemory="true"
+              Value="5"
+              />
+        </SystemCollectorId>
+        <EventCollectorId Value="EventCollector_KernelPower">
+          <Buffers
+              PercentageOfTotalMemory="true"
+              Value="1"
+              />
+        </EventCollectorId>
+      </Collectors>
+    </Profile>
+  </Profiles>
+  <TraceMergeProperties>
+    <TraceMergeProperty
+        Id="TraceMerge_Default"
+        Name="TraceMerge_Default"
+        >
+      <CustomEvents>
+        <CustomEvent Value="ImageId"/>
+        <CustomEvent Value="BuildInfo"/>
+        <CustomEvent Value="VolumeMapping"/>
+        <CustomEvent Value="EventMetadata"/>
+        <CustomEvent Value="PerfTrackMetadata"/>
+        <CustomEvent Value="WinSAT"/>
+      </CustomEvents>
+    </TraceMergeProperty>
+  </TraceMergeProperties>
+</WindowsPerformanceRecorder>

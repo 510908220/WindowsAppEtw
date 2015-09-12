@@ -1,0 +1,56 @@
+operator new
+operator new[]
+_calloc_impl
+_calloc_crt
+
+msvcrt.dll!calloc
+msvcrt.dll!_malloc_crt
+msvcrt.dll!_realloc_crt
+
+GdiPlus.dll!GpMalloc
+
+AcLayers.dll!calloc
+AcLayers.dll!malloc
+
+AcRedir.dll!malloc
+AcRedir.dll!calloc
+
+apphelp.dll!SdbAllocEx
+
+COMCTL32.DLL!calloc
+COMCTL32.DLL!malloc
+COMCTL32.DLL!CCHeapReAlloc
+COMCTL32.DLL!CCHeapReAllocArraySize
+COMCTL32.DLL!CCv6s_HeapAllocArray<char>
+COMCTL32.DLL!CCv6s_HeapAllocT<_DPA>
+COMCTL32.DLL!CCv6s_HeapReallocArray<void *>
+
+DDraw.dll!MemAlloc
+
+DXTRANS.DLL!_MemAlloc
+
+MSCTF.DLL!cicMemAlloc
+MSCTF.DLL!cicMemAllocClear
+MSCTF.DLL!cicMemReAlloc
+
+OLE32.DLL!CoTaskMemAlloc
+OLE32.DLL!CRetailMalloc_Alloc
+OLE32.DLL!CClientCall::operator new
+OLE32.DLL!PrivateMemAlloc
+OLE32.DLL!PrivMemAlloc8
+
+oleaut32.dll!MemAlloc
+oleaut32.dll!APP_DATA::AllocCachedMem
+oleaut32.dll!SysAllocString
+oleaut32.dll!SysAllocStringLen
+oleaut32.dll!SysAllocStringByteLen
+
+rpcrt4.dll!AllocWrapper
+
+UrlMon.dll!_MemAlloc
+UrlMon.dll!_MemAllocClear
+UrlMon.dll!_MemRealloc
+
+UxTheme.dll!ThemeHeapAlloc
+UxTheme.dll!ThemeHeapReAlloc
+

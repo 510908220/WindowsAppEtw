@@ -1,0 +1,27 @@
+#
+# This is a list of locks that are meant to be monitored.
+# If stacks contain these locks, it is probably a performance problem.
+#
+
+# Locks
+ExpWaitForResource
+RtlpWaitOnCriticalSection
+KeWaitForGate
+ExfAcquirePushLockExclusive
+ExfAcquirePushLockShared
+FltAcquirePushLockShared
+ExAcquireSharedStarveExclusive
+ExAcquireFastMutex
+KiAcquireFastMutex
+KiAcquireGuardedMutex
+RtlAcquireResourceShared
+RtlAcquireResourceExclusive
+RtlAcquireSRWLockShared
+RtlAcquireSRWLockExclusive
+
+# Win32k Locks
+EnterCrit                     
+EnterSharedCrit               
+GreAcquireSemaphore           
+GreAcquireSemaphoreShared     
+
